@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro Kanban - SENAI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Programação Front End.</h1>
+        <h2>Situação de Aprendizado #16 Drag and Drop B</h2>
+    </header>
+
+    <main>
+        <section class="informacoes">
+            <p>
+                <strong>Contexto:</strong> O Enem e as provas finais estão chegando!
+                Para evitar a procrastinação, organize seus trabalhos da escola
+                nas colunas "A Fazer", "Em Andamento" e "Concluído".
+            </p>
+
+            <p>
+                <strong>Objetivo:</strong> Permitir que cartões de tarefas sejam
+                movidos livremente entre qualquer uma das três colunas de progresso.
+            </p>
+
+            <p class="entrega">
+                
+            </p>
+        </section>
+
+        <section class="kanban">
+
+            <div class="coluna">
+                <h3>📝 A Fazer</h3>
+                <div class="lista" id="fazer">
+                    <div class="cartao" draggable="true">
+                        Redação do Enem
+                    </div>
+                </div>
+            </div>
+
+            <div class="coluna">
+                <h3>🚀 Em Andamento</h3>
+                <div class="lista" id="andamento">
+                    <div class="cartao" draggable="true">
+                        Estudar Física (Óptica)
+                    </div>
+                </div>
+            </div>
+
+            <div class="coluna">
+                <h3>✅ Concluído</h3>
+                <div class="lista" id="concluido">
+                    <div class="cartao concluido" draggable="true">
+                        Trabalho de História
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="adicionar">
+            <h3>Adicionar nova tarefa</h3>
+            <form id="formulario">
+                <input
+                    type="text"
+                    id="novaTarefa"
+                    placeholder="Digite o nome da tarefa"
+                    required
+                >
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        SENAI São Paulo - Programação Front End
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
